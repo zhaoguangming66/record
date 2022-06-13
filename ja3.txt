@@ -1,0 +1,3 @@
+j3
+import urllib3.util.ssl_
+urllib3.util.ssl_.DEFAULT_CIPHERS = "ECDHE+AESGCM"
