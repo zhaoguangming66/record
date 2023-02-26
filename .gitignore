@@ -1,8 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
-# 公共禁止提交文件
 *.iml
 *.out
 *.xml
