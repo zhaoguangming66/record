@@ -1,23 +1,29 @@
-import time
+import requests
+from curl_cffi import requests as eq
 
 
+headers = {
+    "authority": "mvnrepository.com",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+}
+cookies = {
+    "MVN_SESSION": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InVpZCI6IjU1NTdiMzMwLTA1OGEtMTFlZC1iMTRiLWM1OWRiMTVjMjg3ZCJ9LCJleHAiOjE3MDk0ODA2MjgsIm5iZiI6MTY3Nzk0NDYyOCwiaWF0IjoxNjc3OTQ0NjI4fQ.LRlGfLCgi-fPu6ptOxPb2NoduNIau_lgAryF5otC3p0",
+    "__cf_bm": "t184.90J_dC62hBy.EdAo6lE5Bdo9nXaERA5Q6rhXm4-1677944630-0-AdELEBE+faAYD8GtQuoncSpWxoMdjb5Lx5rBIXVctrsHIm38lBtooGMqKW/CO5g3axI+nSVTbpC6J2KX8KuakCdq0XU2PTPO3b3BYP0tgDNyMeFKqXf0MK55D1IqgMngrqSgRG/HnthIZbsX8uxoTB7VpFJcc9M0UbUVBuTE9kvxJRhGL43shtOrjK0FarqLVg=="
+}
+url = "https://mvnrepository.com/"
+response = eq.get(url,impersonate="chrome101")
 
-def change_time_to_beijin_time(str_time):
-    year_month_day = str_time.split('T')[0]
-    hour_time = (str_time.split('T')[1]).split('+')[0]
-    time_ =  f'{year_month_day} {hour_time}'
-    t_time = time.localtime(int(time.mktime(time.strptime(time_, "%Y-%m-%d %H:%M:%S"))) + 3600 * 1)
-    beijin_time = time.strftime("%Y-%m-%d %H:%M:%S", t_time)
-    return beijin_time
-
-
-if __name__ == '__main__':
-    # print(get_date_str("2023-01-05T10:00:00+01:00"))
-    ss="""# https://magazine.interencheres.com/actualites/
-    # https://magazine.interencheres.com/tendances/
-    # https://magazine.interencheres.com/coulisses-des-encheres/
-    # https://magazine.interencheres.com/art-mobilier/
-    # https://magazine.interencheres.com/vehicules/
-    # https://magazine.interencheres.com/materiels-professionnels/"""
-    ''.replace("# ",'')
-    print([s.strip().replace("# ",'') for s in ss.split("\n")])
+print(response.text)
+print(response)
