@@ -178,6 +178,13 @@ function aaa(e) {
 			}
 			, , function() {
 				i[i.length - 1] += String.fromCharCode(n[t++])
+					data=JSON.stringify(i,function (k,v){
+					if(v===window){
+						return undefined
+					}
+					return v;
+					})
+					console.log(data)
 			}
 			, , , function() {
 				i[i.length - 2] = i[i.length - 2] === i.pop()
