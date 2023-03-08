@@ -12,3 +12,21 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0xaa in position 1122: illegal
 import subprocess
 from functools import partial
 subprocess.Popen = partial(subprocess.Popen, encoding="utf-8")
+# 2 webpack导出模块
+function o(t) {
+        if (n[t])
+            return n[t].exports;
+        var i = n[t] = {
+            i: t,
+            l: !1,
+            exports: {}
+        };
+        chas=  t.toString()  + ":" + (e[t].toString()) + ","
+        zhaolog+=chas
+         console.log("'" + t.toString() + "'" + ":" + (e[t] + "") + ",")
+        return e[t].call(i.exports, i, i.exports, o),
+        i.l = !0,
+        i.exports
+    }
+t 是传进来的参数 e[t].toString() e 是下面call 或者 apply的东西
+console.log("'" + t.toString() + "'" + ":" + (e[t] + "") + ",")

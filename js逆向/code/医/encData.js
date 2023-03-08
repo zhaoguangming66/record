@@ -1,4 +1,5 @@
 var  zhao;var www;
+var zhaolog = ""
 !function(e) {
     function t(t) {
         for (var n, i, o = t[0], a = t[1], s = 0, l = []; s < o.length; s++)
@@ -25,6 +26,9 @@ var  zhao;var www;
             l: !1,
             exports: {}
         };
+        chas=  t.toString()  + ":" + (e[t].toString()) + ","
+        zhaolog+=chas
+         console.log("'" + t.toString() + "'" + ":" + (e[t] + "") + ",")
         return e[t].call(i.exports, i, i.exports, o),
         i.l = !0,
         i.exports
