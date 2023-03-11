@@ -15,6 +15,7 @@ UnicodeDecodeError: 'gbk' codec can't decode byte 0xaa in position 1122: illegal
 import subprocess
 from functools import partial
 subprocess.Popen = partial(subprocess.Popen, encoding="utf-8")
+import execjs
 ```
 
 # 2 webpack导出模块
@@ -36,7 +37,7 @@ function o(t) {
     }
 ```
 
-t 是传进来的参数 e[t].toString() e 是下面call 或者 apply的东西
+t 是传进来的参数 `e[t].toString()` e 是下面call 或者 apply的东西
 ```javascript
 console.log("'" + t.toString() + "'" + ":" + (e[t] + "") + ",")
 ```
