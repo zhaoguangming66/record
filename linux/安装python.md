@@ -1,0 +1,1 @@
+# linux安装python时
