@@ -1,3 +1,4 @@
+// 1 hook cookie
 Object.defineProperty(document,'cookie',{
     //hook set方法也就是赋值的方法
     set: function(val) {
@@ -14,3 +15,19 @@ Object.defineProperty(document,'cookie',{
         return cookieTemp;
     }}
 )
+
+// 2 hook f12 跳转
+(() => {
+    window.onbeforeunload = () => {
+        debugger;
+        return false;
+    }
+})();
+// 3 hook debugger
+Function.prototype.constructor_ =Function.prototype.constructor
+Function.prototype.constructor = function (x){
+    if(x == 'debugger'){
+        return Function.prototype.constructor_("")
+    }
+    Function.prototype.constructor_(x)
+}
