@@ -47,7 +47,7 @@ def req():
     }
     url = "https://api.7seasweb.com/api/asset/findNftPageList"
     data = {
-        "page": 26,
+        "page": 1,
         "size": 16,
         "filterCondition": 2
     }
@@ -56,5 +56,7 @@ def req():
 
     print(response.text)
     print(response)
+
+
 if __name__ == '__main__':
     req()

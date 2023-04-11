@@ -42,5 +42,5 @@ def ask(text):
 
 
 if __name__ == '__main__':
-    txt = "Python压缩文件夹"
+    txt = "python aes加密"
     ask(txt)
