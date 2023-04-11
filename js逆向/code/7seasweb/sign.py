@@ -1,10 +1,9 @@
 import time
 
-from utils.deciphering import md5_encrypt
+from utils.deciphering import md5_encrypt,get_time
 
 
-def get_time():
-    return int(time.time() * 1000)
+
 
 
 def get_sign(timeS):

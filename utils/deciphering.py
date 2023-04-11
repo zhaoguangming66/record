@@ -1,5 +1,9 @@
 import hashlib
+import time
 
+
+def get_time():
+    return int(time.time() * 1000)
 
 def md5_encrypt(text):
     md5 = hashlib.new('md5', text.encode('utf-8'))
