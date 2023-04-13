@@ -24,7 +24,7 @@ def req():
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
     }
     cookies = {}
-    url = 'http://hkcd.com.hk/hkcdweb/content/2023/03/30/content_1393257.html'
+    url = 'https://zhuanlan.zhihu.com/p/158860856'
 
     response = requests.get(url, headers=headers, cookies=cookies, proxies=proxies)
     root = etree.HTML(response.content.decode())
