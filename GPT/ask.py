@@ -42,5 +42,5 @@ def ask(text):
 
 
 if __name__ == '__main__':
-    txt = "python aes加密"
+    txt = "python lxml 保留标签去除里面的属性"
     ask(txt)
