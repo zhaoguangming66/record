@@ -1,30 +1,35 @@
-var window = global
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const dom = new JSDOM('<!DOCUMENT html><p>Test</p>')
+window = dom.window
+document = window.document
+navigator= window.navigator
 
 
-function vmProxy(o){
-    return new Proxy(
-        o,{
-            set(target,property,value){
-
-                console.log('set',target,property,value);
-                debugger
-                return Reflect.set(...arguments);
-            },
-            get(target,property,receiver){
-                console.log('get',target,property,receiver);
-                debugger
-                return target[property]
-            }
-        }
-    )
-
-}
-window = vmProxy(window)
-
-navigator = vmProxy({})
-document = vmProxy({})
-location = vmProxy({})
-navigator = vmProxy({})
+// function vmProxy(o){
+//     return new Proxy(
+//         o,{
+//             set(target,property,value){
+//
+//                 console.log('set',target,property,value);
+//                 debugger
+//                 return Reflect.set(...arguments);
+//             },
+//             get(target,property,receiver){
+//                 console.log('get',target,property,receiver);
+//                 debugger
+//                 return target[property]
+//             }
+//         }
+//     )
+//
+// }
+// window = vmProxy(window)
+//
+// navigator = vmProxy({})
+// document = vmProxy({})
+// location = vmProxy({})
+// navigator = vmProxy({})
 
 
 
