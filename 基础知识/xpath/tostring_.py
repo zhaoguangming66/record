@@ -26,9 +26,9 @@ def req():
     cookies = {}
     url = 'https://zhuanlan.zhihu.com/p/158860856'
 
-    response = requests.get(url, headers=headers, cookies=cookies, proxies=proxies)
+    response = requests.get(url, headers=headers, cookies=cookies)
     root = etree.HTML(response.content.decode())
-    data=xpath_extract_content(root,content_xpath="//div[@class='article']/div[@class='article-content']")
+    data=xpath_extract_content(root,content_xpath="//*",clear_attrib=False)
     print(data)
 if __name__ == '__main__':
     req()

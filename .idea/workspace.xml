@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f8fa334-7f21-431d-9fdb-7db9a52311b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/record.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/redis_practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="3f8fa334-7f21-431d-9fdb-7db9a52311b2" name="Changes" comment="node">
+      <change afterPath="$PROJECT_DIR$/js逆向/code/iq/get_sign.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/iq/sign.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/redbook/web_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/ruishu/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/zhihu/md5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/zhihu/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/zhihu/x-zse-96.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js逆向/code/zhihu/x.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js逆向/code/redbook/web.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础知识/xpath/tostring_.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础知识/xpath/tostring_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
@@ -55,23 +56,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/基础知识" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\record\基础知识" />
+      <recent name="D:\test\record\test" />
+      <recent name="D:\test\record\GPT" />
+      <recent name="D:\test\record\linux" />
       <recent name="D:\test\record" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="v.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/同花顺/v.js" working-dir="$PROJECT_DIR$/同花顺">
+  <component name="RunManager" selected="Python.sign">
+    <configuration name="test.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test/test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="redis_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sign" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="record" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,12 +85,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/js逆向/code/iq" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/redis_practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/js逆向/code/iq/sign.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="record" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/js逆向/code/ruishu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/js逆向/code/ruishu/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,12 +129,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tostring_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="record" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基础知识/xpath" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础知识/xpath/tostring_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,9 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sign" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.redis_practice" />
-        <item itemvalue="Node.js.v.js" />
+        <item itemvalue="Python.tostring_" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Node.js.test.js (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +188,62 @@
       <workItem from="1676945477909" duration="7768000" />
       <workItem from="1677031331758" duration="12804000" />
       <workItem from="1677329265848" duration="1277000" />
+      <workItem from="1679036595715" duration="4736000" />
+      <workItem from="1679067378489" duration="635000" />
+      <workItem from="1679378640708" duration="1638000" />
+      <workItem from="1679461304890" duration="10873000" />
+      <workItem from="1679653593605" duration="668000" />
+      <workItem from="1679983440593" duration="4843000" />
+      <workItem from="1680072192987" duration="4848000" />
+      <workItem from="1680163205145" duration="1822000" />
+      <workItem from="1680250219784" duration="1994000" />
+      <workItem from="1680346936643" duration="1155000" />
+      <workItem from="1680603386551" duration="1736000" />
+      <workItem from="1680749083078" duration="17424000" />
+      <workItem from="1680838399232" duration="12616000" />
+      <workItem from="1681102593128" duration="3438000" />
+      <workItem from="1681178860862" duration="6320000" />
+      <workItem from="1681264501413" duration="4400000" />
+      <workItem from="1681357481529" duration="9081000" />
+      <workItem from="1681437012155" duration="8866000" />
+      <workItem from="1681480945095" duration="354000" />
+      <workItem from="1681481364016" duration="122000" />
+      <workItem from="1681481522768" duration="2898000" />
+      <workItem from="1681524970120" duration="6761000" />
+      <workItem from="1681557228215" duration="5169000" />
+      <workItem from="1681563174284" duration="2761000" />
+      <workItem from="1681609453529" duration="4051000" />
+      <workItem from="1681696359456" duration="609000" />
     </task>
+    <task id="LOCAL-00001" summary="增加 伊通社中文版 __arcsjs">
+      <created>1679983997066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679983997066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加 伊通社中文版 __arcsjs">
+      <created>1680771535806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680771535806</updated>
+    </task>
+    <task id="LOCAL-00003" summary="redbook">
+      <created>1681383129666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681383129666</updated>
+    </task>
+    <task id="LOCAL-00004" summary="node">
+      <created>1681525355264</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681525355264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,8 +261,50 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加 伊通社中文版 __arcsjs" />
+    <MESSAGE value="redbook" />
+    <MESSAGE value="node" />
+    <option name="LAST_COMMIT_MESSAGE" value="node" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js逆向/code/观鸟/sign.js</url>
+          <line>5610</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/基础知识/xpath/tostring_.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/record$test.coverage" NAME="test Coverage Results" MODIFIED="1677052542371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/record$redis_practice.coverage" NAME="redis_practice Coverage Results" MODIFIED="1677047291251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice" />
+    <SUITE FILE_PATH="coverage/record$__VIEWSTATE.coverage" NAME="__VIEWSTATE Coverage Results" MODIFIED="1680778780224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/招标" />
+    <SUITE FILE_PATH="coverage/record$dataAES.coverage" NAME="dataAES Coverage Results" MODIFIED="1680844019028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/电子" />
+    <SUITE FILE_PATH="coverage/record$test.coverage" NAME="test Coverage Results" MODIFIED="1681613013731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/record$redis_practice.coverage" NAME="redis_practice Coverage Results" MODIFIED="1677334312825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice" />
+    <SUITE FILE_PATH="coverage/record$passwrod.coverage" NAME="passwrod Coverage Results" MODIFIED="1677339996574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/twiiter" />
+    <SUITE FILE_PATH="coverage/record$md5.coverage" NAME="md5 Coverage Results" MODIFIED="1681536170655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/zhihu" />
+    <SUITE FILE_PATH="coverage/record$RedisConPool.coverage" NAME="RedisConPool Coverage Results" MODIFIED="1677337224402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/record$sign__1_.coverage" NAME="sign (1) Coverage Results" MODIFIED="1681281279487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/志愿" />
+    <SUITE FILE_PATH="coverage/record$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1681565791842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/ruishu" />
+    <SUITE FILE_PATH="coverage/record$x.coverage" NAME="x Coverage Results" MODIFIED="1681531688183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/zhihu" />
+    <SUITE FILE_PATH="coverage/record$web.coverage" NAME="web Coverage Results" MODIFIED="1681437035354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/redbook" />
+    <SUITE FILE_PATH="coverage/record$de.coverage" NAME="de Coverage Results" MODIFIED="1681374474216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/观鸟" />
+    <SUITE FILE_PATH="coverage/record$1_frida_lesson1.coverage" NAME="1.frida_lesson1 Coverage Results" MODIFIED="1678069629124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/安卓逆向/1,frida" />
+    <SUITE FILE_PATH="coverage/record$selenium.coverage" NAME="去重selenium特征 Coverage Results" MODIFIED="1678529042483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice/sel" />
+    <SUITE FILE_PATH="coverage/record$data.coverage" NAME="data Coverage Results" MODIFIED="1681482620717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/redbook" />
+    <SUITE FILE_PATH="coverage/record$web_session__1_.coverage" NAME="web_session (1) Coverage Results" MODIFIED="1681482079054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/redbook" />
+    <SUITE FILE_PATH="coverage/record$settings.coverage" NAME="settings Coverage Results" MODIFIED="1679653738936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/record$tostring_.coverage" NAME="tostring_ Coverage Results" MODIFIED="1681609963014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础知识/xpath" />
+    <SUITE FILE_PATH="coverage/record$configUtils.coverage" NAME="configUtils Coverage Results" MODIFIED="1677386997841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/record$sign.coverage" NAME="sign Coverage Results" MODIFIED="1681613123286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/iq" />
+    <SUITE FILE_PATH="coverage/record$arcsjs.coverage" NAME="arcsjs Coverage Results" MODIFIED="1680859634308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/js逆向/code/zh_irna_ir" />
+    <SUITE FILE_PATH="coverage/record$ask.coverage" NAME="ask Coverage Results" MODIFIED="1681281265559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GPT" />
   </component>
 </project>
