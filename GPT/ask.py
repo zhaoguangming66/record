@@ -42,5 +42,5 @@ def ask(text):
 
 
 if __name__ == '__main__':
-    txt = "python lxml 保留标签去除里面的属性"
+    txt = "来五组双色球中奖率大的号码"
     ask(txt)
