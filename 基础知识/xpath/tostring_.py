@@ -24,11 +24,11 @@ def req():
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
     }
     cookies = {}
-    url = 'https://zhuanlan.zhihu.com/p/158860856'
+    url = 'https://www.bloomeradvance.com/news/front_page/article_e9f7d042-ef36-11ed-8fbb-039036fa1ed8.html'
 
-    response = requests.get(url, headers=headers, cookies=cookies)
+    response = requests.get(url, headers=headers, cookies=cookies,proxies=proxies)
     root = etree.HTML(response.content.decode())
-    data=xpath_extract_content(root,content_xpath="//*",clear_attrib=False)
+    data=xpath_extract_content(root,content_xpath="//div[@id='article-body']")
     print(data)
 if __name__ == '__main__':
     req()

@@ -349,4 +349,4 @@ function shouldSign(b) {
 }
 window[_0x1ce8[88]] = sign,
 window[_0x1ce8[89]] = shouldSign
-console.log(window.sign("/api/sns/web/v1/user_posted?num=30&cursor=&user_id=596f5b0450c4b41b2bb52c8a",undefined))
+console.log(window.sign("/api/sns/web/v1/user_posted?num=30&cursor=&user_id=63621c5d000000001f01f1c1",undefined))

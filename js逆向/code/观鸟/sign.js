@@ -5607,12 +5607,12 @@ var paramPublicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvxXa98E1uWXnBzXkS2y
 var encrypt = new JSEncrypt();
 function get_data(text){
 
-    var timestamp = 1681360776000;
-    var requestId = '659b54319a1269420b98cd299eb4a81c';
+    var timestamp = Date.parse(new Date());
+    var requestId = getUuid();
     var e = JSON.stringify(sort_ASCII(dataTojson(text || '{}')));
     console.log(e)
     b_data = encrypt.encryptUnicodeLong(e);
     var sign = MD5(e + requestId + timestamp);
     return [timestamp,requestId,sign,b_data]
 }
-console.log(get_data("page=9&limit=20"))
+// console.log(get_data("page=9&limit=20"))

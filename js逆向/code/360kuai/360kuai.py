@@ -1,14 +1,15 @@
 import json
 import re
-
 import execjs
 import requests
 
 
 def get(text):
     ctx = execjs.compile(open('data.js').read())
-    data = ctx.call("r",text)
+    data = ctx.call("r", text)
     return data
+
+
 def get_text():
     headers = {
         "authority": "www.360kuai.com",
@@ -26,19 +27,16 @@ def get_text():
         "upgrade-insecure-requests": "1",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
     }
-    cookies = {
 
-    }
     url = "https://www.360kuai.com/9ce8fd476e917dc89"
     params = {
         "f252c13b3f5c8959a9b275056b558abf": ""
     }
-    response = requests.get(url, headers=headers, cookies=cookies, params=params)
-    # print(response.content.decode())
-    data=re.search("window.__INITIAL_DATA__ = '\\\\\n(.*?)'",response.content.decode(),re.S).group(1)
-    # print(data)
-    wenzi=get(data)
+    response = requests.get(url, headers=headers, params=params)
+    data = re.search("window.__INITIAL_DATA__ = '\\\\\n(.*?)'", response.content.decode(), re.S).group(1)
+    wenzi = get(data)
     print(json.loads(wenzi))
+
 
 if __name__ == '__main__':
     get_text()

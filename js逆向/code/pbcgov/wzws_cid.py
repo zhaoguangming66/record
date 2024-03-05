@@ -3,7 +3,7 @@ from urllib.parse import urljoin
 
 import execjs
 import requests
-sss=requests.session()
+
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "Accept-Language": "zh-CN,zh;q=0.9",
@@ -15,9 +15,10 @@ headers = {
 }
 cookies = {
 }
-url = "http://www.pbc.gov.cn/rmyh/105208/8532/index2.html"
-response = sss.get(url, headers=headers, cookies=cookies, verify=False)
-data = re.search("W\(g,v\);}(.*?)function", response.text, re.S).group(1)
+url = "http://www.pbc.gov.cn/rmyh/105208/8532/index5.html"
+response = requests.get(url, headers=headers, cookies=cookies, verify=False)
+print(response.content.decode())
+data = re.search("W\(g,v\);}(.*?)function", response.content.decode(), re.S).group(1)
 print("------------第一次---------------------")
 js_code = """
 function y() {
@@ -81,17 +82,17 @@ result = compile_result.call('get_url')
 new_url = urljoin(url, result)
 new_ck = response.cookies.get_dict()
 print(new_ck)
-response = requests.get(new_url, headers=headers ,cookies=new_ck,allow_redirects=False,verify=False)
+response = requests.get(new_url, headers=headers, cookies=new_ck, allow_redirects=False, verify=False)
 print("------------第二次--------------")
 print(response.request.headers)
 print(response.cookies.get_dict())
 fin_ck = {
-    'wzws_sessionid':new_ck.get("wzws_sessionid"),
-    'wzws_cid':response.cookies.get_dict().get('wzws_cid')
+    'wzws_sessionid': new_ck.get("wzws_sessionid"),
+    'wzws_cid': response.cookies.get_dict().get('wzws_cid')
 }
 print(fin_ck)
 # print(fin_ck)
-response = requests.get(url, headers=headers,cookies=fin_ck, verify=False)
+response = requests.get(url, headers=headers, cookies=fin_ck, verify=False)
 
 print(f"--------------第三次-----------------")
 print(response.request.headers)

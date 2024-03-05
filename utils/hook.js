@@ -31,3 +31,5 @@ Function.prototype.constructor = function (x){
     }
     Function.prototype.constructor_(x)
 }
+// hook 定时器
+for(var i = 0; i < 9999999; i++) window.clearInterval(i)

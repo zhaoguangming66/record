@@ -3,8 +3,16 @@ from functools import partial
 subprocess.Popen = partial(subprocess.Popen, encoding="utf-8")
 import requests
 import json
+import hashlib
+import time
 
-from utils.deciphering import *
+def get_time():
+    return int(time.time() * 1000)
+
+
+def md5_encrypt(text):
+    md5 = hashlib.new('md5', text.encode('utf-8'))
+    return md5.hexdigest()
 import execjs
 def get(text):
     file = 'sign.js'

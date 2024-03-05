@@ -31,14 +31,14 @@ def req():
         'sec-ch-ua-mobile': '?0',
         'sec-ch-ua-platform': '"Windows"',
         "sign": head[2],
-        "timestamp": str(1681360776000),
+        "timestamp": str(head[0]),
     }
 
     url = "https://api.birdreport.cn/front/activity/search"
 
     data = head[3]
     response = requests.options(url, headers=headers, data=data)
-
+    print(response.status_code)
     print(response.content.decode())
 if __name__ == '__main__':
     req()
